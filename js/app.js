@@ -24,13 +24,13 @@ const createFoodListItem = function (form) {
   restaurant.textContent = form.restaurant.value;
   foodListItem.appendChild(restaurant);
 
-  const food = document.createElement('h3');
-  food.textContent = form.food.value;
-  foodListItem.appendChild(food);
-
-  const course = document.createElement('p');
+  const course = document.createElement('h3');
   course.textContent = form.course.value;
   foodListItem.appendChild(course);
+
+  const food = document.createElement('p');
+  food.textContent = form.food.value;
+  foodListItem.appendChild(food);
 
   return foodListItem;
 }
